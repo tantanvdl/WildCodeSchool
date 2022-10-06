@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+/* *********** GENERAL SETTINGS *********** */
+body {
+    min-width: 285px;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+main.container-fluid {
+    padding: 0;
+    height: calc(100vh - 170px);
+}
+
+.row {
+    margin: 0;
+    height: 100%;
+}
+
+h1, h2 {
+    text-align: center;
+    font-family: 'Itim', cursive;
+}
+
+h2 {
+    margin-bottom: 30px;
+}
+
+textarea:focus, input:focus {
+    outline: none;
+}
+
+/* *********** HEADER *********** */
+header {
+    display: flex;
+    justify-content: center;
+    background: #f4f4f4;
+    text-align: center;
+    padding: 2em;
+}
+
+header img {
+    max-width: 96px;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+/* *********** FORM ADD MEMBER *********** */
+.add-member {
+    background-color: #f76c6c;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 15px;
+    max-width: calc(100% - 30px);
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+.new-member-form {
+    margin: 0 0 4em 0;
+    text-align: center;
+}
+
+button, input {
+    background-color: white;
+    color: #f76c6c;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 7px 15px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #f76c6c;
+    color: white;
+}
+
+/* *********** MEMBERS *********** */
+.list {
+    margin: 50px auto;
+}
+
+.member-list {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.member-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    padding: 0.25em 0;
+    flex: 0 0 33.3333%;
+}
+
+/* *********** FORM UPDATE MEMBER *********** */
+
+.modify, .update-form {
+    display: inline-flex;
+    vertical-align: middle;
+    align-items: center;
+}
+
+.modify a, input.update-input {
+    font-size: 0.5rem;
+    padding: 5px;
+    transition: font-size 0.3s;
+}
+
+.modify a:hover, input.update-input:hover {
+    font-size: 0.8rem;
+    padding: 5px;
+    text-decoration: none;
+}
+
+input.name-input {
+    border: 2px solid #f76c6c;
+    text-align: center;
+    width: calc(100% - 30px);
+}
+
+input.update-input {
+    font-size: 0.8rem;
+    width: 30px;
+}
+
+input.update-input:hover {
+    font-size: 1rem;
+}
+
+.empty-equipage {
+    margin: auto;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+/* *********** FOOTER *********** */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: #fff;
+    background: #f76c6c;
+    padding: 0.25em 0;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
